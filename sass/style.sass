@@ -1,0 +1,72 @@
+*
+	margin: 0
+	padding: 0
+
+#listBlock
+	ul
+		margin: 20px auto
+		background-color: rgba(127, 127, 127, 0.5)
+		border-radius: 10px
+		width: 50%
+
+		li
+			padding: 30px
+			display: inline-block
+
+
+
+		h2
+			text-align: center
+			margin-bottom: 30px
+			cursor: pointer
+		
+		p
+			overflow: hidden
+		
+.page
+	width: 100%
+	height: 100vh
+	background-color: pink
+	border-bottom: 2px solid black
+	font-size: 150px		
+
+#navMenu
+	position: fixed
+	right: 25px
+	bottom: 25px
+	width: 50px
+	height: 50px
+	cursor: pointer
+	.open
+		width:  100%
+		height: 100%
+		border-radius: 50%
+		background-color: green
+		position: absolute
+		z-index: 2
+		left: 0
+		top: 0
+
+	.menuList 
+		li
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			position: absolute
+			background-color: blue
+			left: 0
+			z-index: 1
+			top: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			opacity: 0
+			transition: opacity 0.5s ease 
+
+		.liOpen
+			&:not(.active)
+				opacity: 0.45
+
+			&.active
+				border: 2px solid black
+				opacity: 1
